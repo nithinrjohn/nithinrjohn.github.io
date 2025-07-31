@@ -30,18 +30,18 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     gap: 1rem;
     color: var(--secondary);
+    background-color: var(--background);
 }
 
 body.dark-theme {
-    background-color: var(--background-dark);
+    background-color: var(--secondary);
 }
 
 body.dark-theme main {
     color: var(--primary);
+    background-color: var(--background-dark);
 }
 
 /* Header and Footer */

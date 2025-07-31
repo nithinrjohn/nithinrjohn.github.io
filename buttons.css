@@ -1,0 +1,81 @@
+button, .button, nav a {
+    background-color: var(--secondary);
+    color: var(--primary);
+    border: 2px solid transparent;
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    font-weight: bold;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+button, .button {
+    padding: 0.5rem 0.8rem;
+}
+
+nav a {
+    padding: 0.4rem 0.8rem;
+}
+
+button:hover, .button:hover, nav a:hover {
+    background-color: var(--active);
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+button:active, .button:active, nav a:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+.outline-button {
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: 2px solid var(--secondary);
+}
+
+.outline-button:hover {
+    background-color: var(--primary);
+    color: var(--active);
+    border-color: var(--active);
+    cursor: pointer;
+}
+
+.icon-button {
+    font-family: "Material Symbols Outlined";
+    font-size: 1.5rem;
+    border-radius: 8px;
+    padding: 0.25rem 0.4rem;
+}
+
+.company-icon-button {
+    font-size: 1.5rem;
+    border-radius: 8px;
+    padding: 0.1rem 0.4rem;
+}
+
+/* Dark theme */
+
+body.dark-theme button, body.dark-theme .button, body.dark-theme nav a {
+    background-color: var(--primary);
+    color: var(--secondary);
+    box-shadow: var(--highlight);
+}
+
+body.dark-theme button:hover, body.dark-theme .button:hover, body.dark-theme nav a:hover {
+    background-color: var(--active-dark);
+    color: var(--primary);
+}
+
+body.dark-theme .outline-button {
+    background-color: var(--secondary);
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+body.dark-theme .outline-button:hover {
+    background-color: var(--secondary);
+    color: var(--active-dark);
+    border-color: var(--active-dark);
+    cursor: pointer;
+}

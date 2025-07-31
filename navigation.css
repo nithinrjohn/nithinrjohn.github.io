@@ -1,0 +1,39 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-items a:first-of-type {
+    margin-right: 0.5rem;
+}
+
+.menu {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: block;
+    }
+
+    .menu-items {
+        display: none;
+    }
+
+    .menu-items.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        background-color: var(--background);
+        border-bottom-right-radius: 8px;
+        padding: 1rem;
+        box-shadow: var(--shadow);
+    }
+    .menu-items a:first-of-type {
+        margin: 0 0 0.5rem;
+    }
+}
